@@ -71,7 +71,12 @@ p  { font-size: 0.95rem; color: var(--gray-light); line-height: 1.8; }
   content: '— ';
   color: var(--rose-gold-dark);
 }
-.gold { color: var(--rose-gold); }
+.gold {
+  background: linear-gradient(120deg, #C07060, #D69188, #EEC4A8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
 .text-center { text-align: center; }
 
 /* ── Botões ──────────────────────────────────── */
@@ -90,11 +95,11 @@ p  { font-size: 0.95rem; color: var(--gray-light); line-height: 1.8; }
   white-space: nowrap;
 }
 .btn-gold {
-  background: var(--rose-gold);
+  background: linear-gradient(135deg, #B87060 0%, #D69188 50%, #EEC4A8 100%);
   color: var(--black);
 }
 .btn-gold:hover {
-  background: var(--rose-gold-light);
+  background: linear-gradient(135deg, #C88070 0%, #E0A098 50%, #F4D4BC 100%);
   box-shadow: var(--shadow-gold);
   transform: translateY(-2px);
 }
@@ -129,9 +134,9 @@ p  { font-size: 0.95rem; color: var(--gray-light); line-height: 1.8; }
 
 /* ── Divisor dourado ─────────────────────────── */
 .divider-gold {
-  width: 60px;
+  width: 80px;
   height: 2px;
-  background: linear-gradient(90deg, var(--rose-gold), transparent);
+  background: linear-gradient(90deg, #B87060, #D69188, #EEC4A8, transparent);
   margin: 1.2rem 0 1.8rem;
 }
 .divider-gold.centered { margin: 1.2rem auto 1.8rem; }
@@ -226,7 +231,7 @@ p  { font-size: 0.95rem; color: var(--gray-light); line-height: 1.8; }
   z-index: 999;
   flex-direction: column;
   gap: 1.6rem;
-  border-top: 1px solid rgba(197,155,107,0.15);
+  border-top: 1px solid rgba(214,145,136,0.15);
   transform: translateY(-20px);
   opacity: 0;
   transition: var(--transition);
@@ -383,7 +388,7 @@ p  { font-size: 0.95rem; color: var(--gray-light); line-height: 1.8; }
 .about-badge {
   position: absolute;
   top: 2rem; left: -2rem;
-  background: var(--rose-gold);
+  background: linear-gradient(135deg, #B87060, #D69188, #EEC4A8);
   color: var(--black);
   width: 110px; height: 110px;
   border-radius: 50%;
@@ -415,7 +420,7 @@ p  { font-size: 0.95rem; color: var(--gray-light); line-height: 1.8; }
   min-width: 42px;
   border-radius: 50%;
   background: var(--rose-gold-glow);
-  border: 1px solid rgba(197,155,107,0.3);
+  border: 1px solid rgba(214,145,136,0.3);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -468,7 +473,7 @@ p  { font-size: 0.95rem; color: var(--gray-light); line-height: 1.8; }
     to top,
     rgba(13,13,13,0.98) 0%,
     rgba(13,13,13,0.55) 55%,
-    rgba(197,155,107,0.08) 100%
+    rgba(214,145,136,0.08) 100%
   );
 }
 .modality-card h3 {
@@ -526,7 +531,7 @@ p  { font-size: 0.95rem; color: var(--gray-light); line-height: 1.8; }
    DIFERENCIAIS / NÚMEROS
 ════════════════════════════════════════════════ */
 .stats-section {
-  background: var(--rose-gold);
+  background: linear-gradient(135deg, #B87060 0%, #D69188 50%, #EEC4A8 100%);
   padding: 72px 0;
 }
 .stats-grid {
@@ -570,7 +575,7 @@ p  { font-size: 0.95rem; color: var(--gray-light); line-height: 1.8; }
   transition: var(--transition);
 }
 .project-card:hover {
-  border-color: rgba(197,155,107,0.25);
+  border-color: rgba(214,145,136,0.25);
   transform: translateY(-4px);
   box-shadow: var(--shadow-gold);
 }
@@ -602,7 +607,7 @@ p  { font-size: 0.95rem; color: var(--gray-light); line-height: 1.8; }
   transition: var(--transition);
 }
 .product-card:hover {
-  border-color: rgba(197,155,107,0.3);
+  border-color: rgba(214,145,136,0.3);
   transform: translateY(-4px);
   box-shadow: var(--shadow-gold);
 }
@@ -640,11 +645,11 @@ p  { font-size: 0.95rem; color: var(--gray-light); line-height: 1.8; }
   transform: scaleX(0);
   transition: var(--transition);
 }
-.plan-card:hover { border-color: rgba(197,155,107,0.2); transform: translateY(-4px); }
+.plan-card:hover { border-color: rgba(214,145,136,0.2); transform: translateY(-4px); }
 .plan-card:hover::before { transform: scaleX(1); }
 .plan-card.featured {
   border-color: var(--rose-gold);
-  background: linear-gradient(135deg, rgba(197,155,107,0.08), var(--black-card));
+  background: linear-gradient(135deg, rgba(214,145,136,0.08), var(--black-card));
 }
 .plan-card.featured::before { transform: scaleX(1); }
 .plan-badge {
@@ -672,8 +677,8 @@ p  { font-size: 0.95rem; color: var(--gray-light); line-height: 1.8; }
 ════════════════════════════════════════════════ */
 .cta-band {
   background: linear-gradient(135deg, var(--black-soft) 0%, var(--black) 100%);
-  border-top: 1px solid rgba(197,155,107,0.12);
-  border-bottom: 1px solid rgba(197,155,107,0.12);
+  border-top: 1px solid rgba(214,145,136,0.12);
+  border-bottom: 1px solid rgba(214,145,136,0.12);
   padding: 80px 0;
   text-align: center;
 }
@@ -701,7 +706,7 @@ p  { font-size: 0.95rem; color: var(--gray-light); line-height: 1.8; }
   width: 48px; height: 48px;
   min-width: 48px;
   background: var(--rose-gold-glow);
-  border: 1px solid rgba(197,155,107,0.25);
+  border: 1px solid rgba(214,145,136,0.25);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -739,7 +744,7 @@ p  { font-size: 0.95rem; color: var(--gray-light); line-height: 1.8; }
 .form-group select:focus,
 .form-group textarea:focus {
   border-color: var(--rose-gold);
-  background: rgba(197,155,107,0.04);
+  background: rgba(214,145,136,0.04);
 }
 .form-group select option { background: var(--black-card); }
 .form-group textarea { resize: vertical; min-height: 120px; }
@@ -749,7 +754,7 @@ p  { font-size: 0.95rem; color: var(--gray-light); line-height: 1.8; }
   margin-top: 2rem;
   border-radius: var(--radius);
   overflow: hidden;
-  border: 1px solid rgba(197,155,107,0.15);
+  border: 1px solid rgba(214,145,136,0.15);
 }
 .map-embed iframe { display: block; }
 
@@ -758,7 +763,7 @@ p  { font-size: 0.95rem; color: var(--gray-light); line-height: 1.8; }
 ════════════════════════════════════════════════ */
 .footer {
   background: var(--black);
-  border-top: 1px solid rgba(197,155,107,0.12);
+  border-top: 1px solid rgba(214,145,136,0.12);
   padding: 64px 0 0;
 }
 .footer-grid {
@@ -773,7 +778,7 @@ p  { font-size: 0.95rem; color: var(--gray-light); line-height: 1.8; }
 .footer-social {
   width: 38px; height: 38px;
   border-radius: 50%;
-  border: 1px solid rgba(197,155,107,0.3);
+  border: 1px solid rgba(214,145,136,0.3);
   display: flex; align-items: center; justify-content: center;
   font-size: 0.9rem;
   color: var(--rose-gold);
@@ -857,7 +862,7 @@ p  { font-size: 0.95rem; color: var(--gray-light); line-height: 1.8; }
   z-index: 8888;
   background: rgba(13,13,13,0.98);
   backdrop-filter: blur(12px);
-  border-top: 1px solid rgba(197,155,107,0.2);
+  border-top: 1px solid rgba(214,145,136,0.2);
   padding: 1.4rem 5%;
   display: flex;
   align-items: center;
@@ -887,7 +892,7 @@ p  { font-size: 0.95rem; color: var(--gray-light); line-height: 1.8; }
   top: -50%; right: -10%;
   width: 500px; height: 500px;
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(197,155,107,0.08) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(214,145,136,0.08) 0%, transparent 70%);
   pointer-events: none;
 }
 .page-hero .section-tag { display: block; margin-bottom: 1rem; }
@@ -916,14 +921,14 @@ p  { font-size: 0.95rem; color: var(--gray-light); line-height: 1.8; }
   min-width: 56px;
   border-radius: 50%;
   background: var(--rose-gold-glow);
-  border: 1px solid rgba(197,155,107,0.3);
+  border: 1px solid rgba(214,145,136,0.3);
   display: flex; align-items: center; justify-content: center;
   font-size: 1.4rem;
 }
 .modality-tags { display: flex; flex-wrap: wrap; gap: 0.6rem; }
 .tag-pill {
-  background: rgba(197,155,107,0.1);
-  border: 1px solid rgba(197,155,107,0.25);
+  background: rgba(214,145,136,0.1);
+  border: 1px solid rgba(214,145,136,0.25);
   color: var(--rose-gold);
   font-size: 0.75rem;
   font-weight: 600;
@@ -967,7 +972,7 @@ p  { font-size: 0.95rem; color: var(--gray-light); line-height: 1.8; }
   transition: var(--transition);
 }
 .project-full-card:hover {
-  border-color: rgba(197,155,107,0.25);
+  border-color: rgba(214,145,136,0.25);
   transform: translateY(-6px);
   box-shadow: var(--shadow-gold);
 }
