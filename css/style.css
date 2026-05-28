@@ -11,10 +11,10 @@
   --black:           #0D0D0D;
   --black-soft:      #181818;
   --black-card:      #1E1E1E;
-  --rose-gold:       #C4848E;
-  --rose-gold-light: #D4A0A8;
-  --rose-gold-dark:  #9E6068;
-  --rose-gold-glow:  rgba(196, 132, 142, 0.20);
+  --rose-gold:       #D69188;
+  --rose-gold-light: #E6ABA4;
+  --rose-gold-dark:  #B2706A;
+  --rose-gold-glow:  rgba(214, 145, 136, 0.20);
   --cream:           #F8F3EE;
   --cream-dark:      #EDE4D8;
   --white:           #FFFFFF;
@@ -26,7 +26,7 @@
   --transition:      all 0.35s ease;
   --radius:          6px;
   --shadow:          0 12px 48px rgba(0,0,0,0.18);
-  --shadow-gold:     0 8px 32px rgba(196,132,142,0.28);
+  --shadow-gold:     0 8px 32px rgba(214,145,136,0.28);
 }
 
 /* ── Reset ───────────────────────────────────── */
